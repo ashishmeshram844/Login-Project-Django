@@ -1,0 +1,33 @@
+<form action="{% url 'register' %}" method="POST" class="form login">
+    {% csrf_token %} {% include 'partials/message.html' %}
+
+    <div class="form__field">
+        <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+        <input id="login__fname" type="text" name="fname" class="form__input" placeholder="first name" required>
+    </div>
+
+
+    <div class="form__field">
+        <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+        <input id="login__lname" type="text" name="lname" class="form__input" placeholder="Last Name" required>
+    </div>
+
+
+    <div class="form__field">
+        <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+        <input id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
+    </div>
+
+    <div class="form__field">
+        <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+        <input id="login__password" type="password" name="password1" class="form__input" placeholder="Password" required>
+    </div>
+
+    <div class="form__field">
+        <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+        <input id="login__password2" type="password" name="password2" class="form__input" placeholder="Confirm Password" required>
+    </div>
+    <div class="form__field">
+        <input type="submit" value="Sign Up">
+    </div>
+</form>
